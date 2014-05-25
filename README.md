@@ -3,9 +3,7 @@ Adaptive Placeholders
 
 Adaptive placeholders is a Sass mixin for an interactive form placeholder initially made by [Danny King](https://twitter.com/dannykingme). 
 
-This Sass mixin comes with additional settings to help you easily configure the placeholder to match your design. For the motivation behind this experiment, read this [blog post](). 
-
-The original less version can be found [here](http://codepen.io/dannykingme/pen/IvFuB)
+This Sass mixin comes with additional settings to help you easily configure the placeholder to match your design. 
 
 ## Screenshot 
 
@@ -107,3 +105,10 @@ Alternatively, you can insert the sass map directly into the mixin.
 
 Works on IE9+, Firefox 28+, Chrome 31+, Safari 7+.
 
+## Credits 
+
+@ Danny King for the concept and initial code. The original Less code can be found [here](http://codepen.io/dannykingme/pen/IvFuB)
+
+## License 
+
+MIT License. 
