@@ -1,0 +1,203 @@
+/**
+ * Normalize Input + Textarea
+ */
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+input,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+label {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+input[type='email'],
+input[type='text'] {
+  background-color: white;
+  height: -webkit-calc(3em + 2px);
+  height: calc(3em + 2px);
+  padding: 1em;
+  font-size: 1em;
+  border: 1px solid #cccccc;
+  border-radius: 1.5em;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  resize: none;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+  input[type='email']:hover,
+  input[type='text']:hover {
+    border: 1px solid #cccccc; }
+  input[type='email']:focus, input[type='email']:active,
+  input[type='text']:focus,
+  input[type='text']:active {
+    border: 1px solid #e87e22; }
+    input[type='email']:focus + label:before, input[type='email']:active + label:before,
+    input[type='text']:focus + label:before,
+    input[type='text']:active + label:before {
+      color: #e87e22; }
+  input[type='email'] + label,
+  input[type='text'] + label {
+    display: block;
+    font-size: 1em;
+    height: 3em;
+    line-height: 3em;
+    margin-top: -webkit-calc(-3em - 1px);
+    margin-top: calc(-3em - 1px);
+    margin-bottom: 1em;
+    pointer-events: none; }
+    input[type='email'] + label:before,
+    input[type='text'] + label:before {
+      content: attr(placeholder);
+      display: inline-block;
+      color: #999999;
+      margin: 0 -webkit-calc(1em + 2px);
+      margin: 0 calc(1em + 2px);
+      white-space: nowrap;
+      -webkit-transition-property: -webkit-transform, color;
+      transition-property: transform, color;
+      -webkit-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      -webkit-transition-delay: 0;
+      transition-delay: 0;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+      -webkit-transform-origin: left center;
+      -ms-transform-origin: left center;
+      transform-origin: left center; }
+  input[type='email']:focus + label:before, input[type='email'].active + label:before, input[type='email']:valid + label:before,
+  input[type='text']:focus + label:before,
+  input[type='text'].active + label:before,
+  input[type='text']:valid + label:before {
+    background: white;
+    line-height: 1;
+    padding: 0 1.5px;
+    -webkit-transform: translateY(-webkit-calc(-3em / 2 - 1px/2)) scale(0.8, 0.8);
+    -ms-transform: translateY(calc(-3em / 2 - 1px/2)) scale(0.8, 0.8);
+    transform: translateY(calc(-3em / 2 - 1px/2)) scale(0.8, 0.8); }
+  input[type='email']:valid,
+  input[type='text']:valid {
+    border: 1px solid #23a045; }
+    input[type='email']:valid + label:before,
+    input[type='text']:valid + label:before {
+      content: attr(alt);
+      color: #23a045; }
+
+textarea {
+  background-color: white;
+  height: -webkit-calc(18em + 2px);
+  height: calc(18em + 2px);
+  padding: 1em;
+  font-size: 1em;
+  border: 1px solid #cccccc;
+  border-radius: 1.5em;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  resize: none;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+  textarea:hover {
+    border: 1px solid #cccccc; }
+  textarea:focus, textarea:active {
+    border: 1px solid #e87e22; }
+    textarea:focus + label:before, textarea:active + label:before {
+      color: #e87e22; }
+  textarea + label {
+    display: block;
+    font-size: 1em;
+    height: -webkit-calc(18em + 2px);
+    height: calc(18em + 2px);
+    line-height: 1;
+    padding-top: -webkit-calc(1em + 1px);
+    padding-top: calc(1em + 1px);
+    margin-top: -webkit-calc(-18em - 2px);
+    margin-top: calc(-18em - 2px);
+    margin-bottom: 1em;
+    pointer-events: none; }
+    textarea + label:before {
+      content: attr(placeholder);
+      display: inline-block;
+      color: #999999;
+      margin: 0 -webkit-calc(1em + 2px);
+      margin: 0 calc(1em + 2px);
+      white-space: nowrap;
+      -webkit-transition-property: -webkit-transform, color;
+      transition-property: transform, color;
+      -webkit-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      -webkit-transition-delay: 0;
+      transition-delay: 0;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+      -webkit-transform-origin: left center;
+      -ms-transform-origin: left center;
+      transform-origin: left center; }
+  textarea:focus + label:before, textarea.active + label:before, textarea:valid + label:before {
+    background: white;
+    line-height: 1;
+    padding: 0 1.5px;
+    -webkit-transform: translateY(-webkit-calc((-1em - 0.5em) - 0.5px)) scale(0.8, 0.8);
+    -ms-transform: translateY(calc((-1em - 0.5em) - 0.5px)) scale(0.8, 0.8);
+    transform: translateY(calc((-1em - 0.5em) - 0.5px)) scale(0.8, 0.8); }
+  textarea:valid {
+    border: 1px solid #23a045; }
+    textarea:valid + label:before {
+      content: attr(alt);
+      color: #23a045; }
+
+html {
+  height: 100%; }
+
+body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%; }
+
+input, textarea {
+  width: 18em;
+  max-width: 100%; }
+
+h1 {
+  display: block;
+  color: #444;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+form {
+  width: 18em; }

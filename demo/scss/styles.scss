@@ -1,0 +1,59 @@
+@import "../../adaptive-placeholders";
+
+// Setting Defaults for Adaptive Placeholder
+$adaptive-placeholder: (
+  height: 3em,
+  margin: 1em,
+  font-size: 1em,
+    );
+
+// Calling adaptive placeholder for input
+input[type='email'],
+input[type='text'] {
+  @include adaptive-placeholder();
+}
+
+// Settings for Adaptive Placeholder to use with Textareas
+// Note the use of textarea key
+// $textarea-placeholder: (
+//   height: 18em,
+//   border-radius: 16px,
+//   textarea: true,
+//   );
+
+// calling adaptive placeholder for textarea
+textarea {
+  @include adaptive-placeholder((height:18em, textarea:true));
+}
+
+
+
+
+
+
+// For Demo Purposes
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+input, textarea {
+  width: 18em;
+  max-width: 100%;
+}
+
+h1 {
+  display: block;
+  color: #444;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+form {
+  width: 18em;
+}
