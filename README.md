@@ -103,7 +103,11 @@ Alternatively, you can insert the sass map directly into the mixin.
 
 ## Browser Tests
 
-Works on IE9+, Firefox 28+, Chrome 31+, Safari 7+.
+Works on IE9+, Firefox 28+, Chrome 31+, Safari 7+, Opera 22+ 
+
+## Changelog 
+
+1.0.1: Added browser prefixes for all transitions and transformations used in Adaptive Placeholders
 
 ## Credits 
 

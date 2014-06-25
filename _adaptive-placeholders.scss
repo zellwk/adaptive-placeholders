@@ -67,10 +67,16 @@ $adaptive-placeholder: ();
   padding: $margin;
   font-size: $font-size;
   border: $border solid $border-color;
-  border-radius: $radius;  transition: all 0.2s ease-out;
+  border-radius: $radius;
+
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+
+  -webkit-box-shadow: none;
+  box-shadow: none;
+
   resize: none;
   outline: none;
-  box-shadow: none;
   &:hover {
     border: $border solid $border-color;
   }
@@ -115,12 +121,28 @@ $adaptive-placeholder: ();
       margin: 0 calc(#{$margin} + #{$borders});
       white-space: nowrap;
       // Transformation properties
+
+      -webkit-transition-property: -webkit-transform, color;
       transition-property: transform, color;
+      -webkit-transition-duration: 0.2s;
       transition-duration: 0.2s;
+      -webkit-transition-delay: 0;
       transition-delay: 0;
+      -webkit-transition-timing-function: ease-out;
       transition-timing-function: ease-out;
       // Set origin to left center so it scales to the left instead of center center
+      -webkit-transform-origin: left center;
+      -ms-transform-origin: left center;
       transform-origin: left center;
+
+      // Here's a version without prefixes
+      // transition-property: transform, color;
+      // transition-duration: 0.2s;
+      // transition-delay: 0;
+      // transition-timing-function: ease-out;
+      // // Set origin to left center so it scales to the left instead of center center
+      // transform-origin: left center;
+
     }
   }
 
@@ -135,9 +157,13 @@ $adaptive-placeholder: ();
       line-height: 1;
       padding: 0 $border * 1.5;
       @if $isTextarea {
+        -webkit-transform: translateY(calc((-#{$margin} - 0.5em) - #{$border * 0.5})) scale(0.8, 0.8);
+        -ms-transform: translateY(calc((-#{$margin} - 0.5em) - #{$border * 0.5})) scale(0.8, 0.8);
         transform: translateY(calc((-#{$margin} - 0.5em) - #{$border * 0.5})) scale(0.8, 0.8);
       }
       @else {
+        -webkit-transform: translateY(calc(-#{$height} / 2 - #{$border}/2)) scale(0.8, 0.8);
+        -ms-transform: translateY(calc(-#{$height} / 2 - #{$border}/2)) scale(0.8, 0.8);
         transform: translateY(calc(-#{$height} / 2 - #{$border}/2)) scale(0.8, 0.8);
       }
     }
