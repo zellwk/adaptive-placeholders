@@ -30,7 +30,7 @@
     "screenshots",
     "scss"
   ],
-  "devDependencies": {
+  "dependencies": {
     "normalize-scss": "~3.0.1"
   }
 }
