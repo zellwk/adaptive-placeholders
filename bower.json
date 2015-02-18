@@ -1,15 +1,12 @@
 {
   "name": "adaptive-placeholders",
-  "version": "1.1.2",
+  "version": "1.1.1",
   "homepage": "https://github.com/zellwk/adaptivePlaceholders",
   "authors": [
     "Zell Liew <zellwk@gmail.com>"
   ],
-  "description": "daptive placeholders is a Sass mixin for an interactive form placeholder.",
-  "main": [
-    "_adaptive-placeholders.scss",
-    "app"
-  ],
+  "description": "Adaptive placeholders is a Sass mixin for an interactive form placeholder.",
+  "main": "_adaptive-placeholders.scss",
   "keywords": [
     "JV",
     "Float",
