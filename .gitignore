@@ -1,3 +1,19 @@
-config.codekit
+# osx noise
+.DS_Store
+profile
+
+#ignore sass caches
 .sass-cache
-README.html
+
+#ignore sublime projects
+.sublime-project
+.sublime-workspace
+
+#ignore node_modules
+node_modules
+
+#ignore bower_components
+bower_components
+
+#ignore data.json (for library projects)
+#_data.json

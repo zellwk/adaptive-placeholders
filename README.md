@@ -26,9 +26,9 @@ Write your HTML in this way:
 
     <form action="#">
         <!-- input must have an required attribute -->
-        <input type="text" required>
+        <input type="text" name="input" id="input" required>
         <!-- labels must have placeholder and alt attributes -->
-        <label placeholder="First Placeholder Label" alt="Second Placeholder Label"></label>
+        <label for="input" placeholder="First Placeholder Label" alt="Second Placeholder Label"></label>
     </form>
 
 Then call the mixin. 
@@ -78,8 +78,8 @@ The adaptive placeholders provides you with a optional argument to insert a sass
 Textareas are styled differently from inputs items. To use adaptive placeholders with textareas, write your html the same way as you would use adaptive placeholders for input. 
 
     <form action="">
-        <textarea required></textarea>
-        <label placeholder="First Textarea Placeholder" alt="Second Textarea Placeholder"></label>
+        <textarea name="textarea" id="textarea" required></textarea>
+        <label for="textarea" placeholder="First Textarea Placeholder" alt="Second Textarea Placeholder"></label>
     </form>
 
 Create a new sass map for textareas and call it. Make sure textarea is set to true in the sass map. 
@@ -103,11 +103,19 @@ Alternatively, you can insert the sass map directly into the mixin.
 
 ## Browser Tests
 
-Works on IE9+, Firefox 28+, Chrome 31+, Safari 7+, Opera 22+ 
+Works on IE10+, Firefox 28+, Chrome 31+, Safari 7+, Opera 22+ 
 
 ## Changelog 
 
-1.0.1: Added browser prefixes for all transitions and transformations used in Adaptive Placeholders
+##### 1.1.0
+- Fix translateY bug with calc for IE 10. 
+- Tested and proved to work with IE 10 & IE 11
+- Reworked bower file structure 
+- Placed demo into `app` folder
+
+##### 1.0.1: 
+
+- Added browser prefixes for all transitions and transformations used in Adaptive Placeholders
 
 ## Credits 
 
