@@ -14,7 +14,14 @@ Adaptive Placeholder works with both text input fields and textarea.
 
 ## Requirements 
 
-Adaptive Placeholder uses Sass maps and requires Sass > v3.3. 
+- Sass v3.3 and above 
+- You have Normalize.css in the project 
+
+## Installation 
+
+Download the project either by downloading the zip, or using Bower
+
+    $ bower install adaptive-placeholders
 
 ## Usage 
 
@@ -106,6 +113,9 @@ Alternatively, you can insert the sass map directly into the mixin.
 Works on IE10+, Firefox 28+, Chrome 31+, Safari 7+, Opera 22+ 
 
 ## Changelog 
+
+##### 1.1.4
+- Remove Normalize.scss import statement 
 
 ##### 1.1.0
 - Fix translateY bug with calc for IE 10. 
