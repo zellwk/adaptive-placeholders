@@ -15,8 +15,5 @@
     "partials", 
     "_data.json",
     "*.js"
-  ],
-  "dependencies": {
-    "normalize-scss": "~3.0.1"
-  }
+  ]
 }
