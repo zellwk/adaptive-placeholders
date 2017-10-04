@@ -160,7 +160,7 @@ $adaptive-placeholder: ();
   // Focused, active and valid states for input and placeholder
   // Shifts up and adds a background white
   &:focus,
-  &.active,
+  &:active,
   &:valid {
     & + label:before {
       background: $placeholder-background;
