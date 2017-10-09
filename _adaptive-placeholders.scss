@@ -95,12 +95,12 @@ $adaptive-placeholder: ();
   &:focus,
   &:active {
     border: $border solid $active-color;
-    & + label:before {
+    & ~ label:before {
       color: $active-color;
     }
   }
   // Placeholder Styles
-  & + label {
+  & ~ label {
     display: block;
     font-size: $font-size;
 
@@ -162,7 +162,7 @@ $adaptive-placeholder: ();
   &:focus,
   &:active,
   &:valid {
-    & + label:before {
+    & ~ label:before {
       background: $placeholder-background;
       // set padding for left & right of tiny placeholder text
       line-height: 1;
@@ -183,7 +183,7 @@ $adaptive-placeholder: ();
   // Change placeholder value once text is entered.
   &:valid {
     border: $border solid $valid-color;
-    & + label:before {
+    & ~ label:before {
       content: attr(alt);
       color: $valid-color;
     }
