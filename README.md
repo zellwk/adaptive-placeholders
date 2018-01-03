@@ -5,6 +5,8 @@ Adaptive placeholders is a Sass mixin for an interactive form placeholder initia
 
 This Sass mixin comes with additional settings to help you easily configure the placeholder to match your design. 
 
+Note: I no longer maintain this repository. 
+
 ## Screenshot 
 
 Adaptive Placeholder works with both text input fields and textarea. 
